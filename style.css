@@ -1,0 +1,34 @@
+body {
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    padding: 40px;
+    position: relative;
+    margin: 0 auto; 
+    width: 700px;
+    height: 250px; 
+}
+.style_title{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.list_style{
+    width: 200px;
+    height: 40px;
+    margin-left: 250px;
+    border: 2px solid black;
+    margin-right: 20px;
+    font-size: 22px;
+    border-radius: 15px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+}
+.container:hover .list_style, 
+.list_style:focus {
+    opacity: 1;
+    height: 50px; 
+}
